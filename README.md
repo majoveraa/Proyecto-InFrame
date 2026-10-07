@@ -1,2 +1,2 @@
-# Proyecto-InFrame
-Este repositorio es diseñado para la asignatura de programación y diseño de aplicaciones.
+# Proyecto-LENSÉ
+Este desarrollo web está diseñado para ofrecer servicios de fotografía deportiva y compartir una mirada personal a través de imágenes de momentos, lugares y experiencias.
