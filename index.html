@@ -15,10 +15,13 @@
   <meta name="author" content="Majo Vera">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
+  <!-- Archivo externo -->
   <link rel="stylesheet" href="css/style.css">
 <title>InFrame | Photography </title>
 <!-- El tag de title es para cómo quiero que me encuentren en la web -->
@@ -57,11 +60,14 @@
 
     </nav>
 
-    <button id="menu-toggle" class="menu-toggle" 
-    aria-label="Abrir menú" aria-expanded="false" 
-    aria-controls="mobile-menu">☰</button>
+
+<!-- BOTÓN MENÚ MÓVIL -->
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+        </button>
     </div>
 
+    <!-- NAVEGACIÓN MÓVIL -->
     <nav id="mobile-menu" class="mobile-nav">
       <ul>
     <li>
@@ -85,35 +91,120 @@
 
     </header>
 
+        <!-- INICIO MAIN PRINCIPAL DEL DESARROLLO WEB -->
     <main>
-        <!-- SECCIÓN CARUSSEL -->
+        <!-- SECCIÓN CARUSSEL INTERACTIVO DE 3 IMÁGENES -->
 
-    <section id="carrusel" class ="carousel-section container">
-        <h2>Where moments become timeless.</h2>
+    <section id="inicio" class ="hero-section">
         <div class="carousel-track" id="carouseltrackebc">
+        
             <!--Primera imagen hero-->
             <div class="carousel.slide">
-                <img src="img/hero1.jpeg" alt="imagen InFrame hero">
+                <img src="img/hero1.jpg" alt="imagen InFrame hero">
+                <div class="slide-overlay">
+                        <span class="badge">InFrame</span>
+                        <h1>Every <span class="highlight-yellow"> Second Matters </span></h1>
+                        <p>The effort, the adrenaline, the moments that make every finish line worth it.</p>
+                        <a href="#servicios" class="btn-hero">Explore sports photography</a>
+                    </div>
             </div>
+
             <!--Segunda imagen hero-->
             <div class="carousel.slide">
                 <img src="img/hero2.jpeg" alt="imagen InFrame1 hero">
+                <div class="slide-overlay">
+                        <span class="badge">Inframe</span>
+                        <h1>Chasing <span class="highlight-yellow">The Extraordinary</span></h1>
+                        <p>Capturing the beauty of places, the magic of light, and the feeling of being there.</p>
+                        <a href="#servicios" class="btn-hero">Explore our landscapes</a>
+                    </div>
             </div>
+
             <!--Tercera imagen hero-->
             <div class="carousel.slide">
-                <img src="img/hero3.jpeg" alt="imagen InFrame2 hero">
+                <img src="img/hero3.jpg" alt="imagen InFrame2 hero">
+                <div class="slide-overlay">
+                        <span class="badge">InFrame</span>
+                        <h1>Made <span class="highlight-yellow">Of Moment</span></h1>
+                        <p>Real people, raw energy, and fleeting moments captured forever.</p>
+                        <a href="#servicios" class="btn-hero">Discover our work</a>
+                    </div>
             </div>
-    
         </div>
 
+        <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
 
-    </section>
+        <!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
+            </div>
+        </section>
+    
+        <!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTROS SERVICIOS</h2>
+                    <h3>SERVICIOS DE FOTOGRAFÍA</h3>
+                </div>
 
+               <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
+                        <h4>Sports Photography</h4>
+                        <p>Capturing the intensity, dedication, and emotion behind every race, competition, and finish line.</p>
+                    </div>
+                
+                 <div class="card">
+                        <div class="card-icon red"><i class="fa-solid fa-volume-high"></i></div>
+                        <h4>Landscape Photography</h4>
+                        <p>Timeless images that capture the beauty of nature, extraordinary places, and unforgettable views.</p>
+                    </div>
+                
+                <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+                        <h4>Lifestyle & Personal Photography</h4>
+                        <p>Authentic moments, personal stories, and unique experiences captured with a creative perspective.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<p>This is a paragraph.</p>
-
+         <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="https://i.pinimg.com/736x/8a/98/80/8a988037e7b323b1082c9e09444ce7b8.jpg" alt="Sobre nosotros" width="600" height="600">
+                </div>
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>Every frame has a story.</h3>
+                    <p>At <strong>InFrame</strong>, we capture the moments that make life extraordinary.</p>
+                    <p>From the adrenaline of sports competitions to the quiet beauty of breathtaking landscapes, our photography preserves genuine emotions, unique perspectives, and memories worth keeping.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">01</span>
+                            <span class="stat-lbl">Unique Perspective</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">∞</span>
+                            <span class="stat-lbl">Stories to Capture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+<!-- FOOTER -->
 <footer>
   <div class="footer-social">
     <div class="container social-icons">
